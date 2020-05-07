@@ -1,12 +1,12 @@
-//Initialize Express / Handlebars
+//Initialize Express
 var express = require('express');
-
 var app = express();
-var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
+//Initialize Handlebars
+var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 3000);
+app.set('port', 9001);
 
 //•"Render" a page that has a H1 tag displaying "GET Request Received"
 //res.render('home.handlebars');
