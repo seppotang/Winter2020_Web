@@ -4,7 +4,7 @@ var app = express();
 
 //Initialize Handlebars
 var handlebars = require('express-handlebars');
-app.engine('handlebars', exphbs({defaultLayout: 'main', extname: '.handlebars'}));
+app.engine('handlebars', handlebars({defaultLayout: 'main', extname: '.handlebars'}));
 app.set('view engine', 'handlebars');
 app.set('port', 9001);
 
