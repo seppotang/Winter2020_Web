@@ -12,7 +12,7 @@ app.set('port', 9001);
 //res.render('home.handlebars');
 
 app.get('/',function(req,res){
-/* 	var h = document.createElement("H1");
+	var h = document.createElement("H1");
 	var t = document.createTextNode("GET Request Received");
 	h.appendChild(t); // Append the text node to the H1 element 
 	document.body.appendChild(h); // Append the H1 element to the document body
@@ -30,7 +30,7 @@ app.get('/',function(req,res){
 			newCell.textContent = i + ' ' + j;
 			newRow.appendChild(newCell);
 		}
-	} */
+	}
 	res.render('home.handlebars');
 });
 
