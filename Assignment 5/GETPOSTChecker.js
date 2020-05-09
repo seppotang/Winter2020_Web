@@ -10,7 +10,7 @@ app.set('port', 9001);
 
 //Initialize bodyParser for POST request
 var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: false});
+app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
 //Handle GETs
