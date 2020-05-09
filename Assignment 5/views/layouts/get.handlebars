@@ -1,0 +1,16 @@
+<!--Header param gets changed depending if its a get or post request -->
+<h1>GET Request Received</h1>
+
+<!-- GET or POST handling table -->
+<table>
+	<tr>
+		<th>Parameter header</th>
+		<th>Data content</th>
+	</tr>
+	{{#each dataList}}
+		<tr>
+			<td>{{this.name}}</td>
+			<td>{{this.value}}</td>
+		</tr>
+	{{/each}}
+</table>
