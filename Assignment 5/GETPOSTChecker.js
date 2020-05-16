@@ -14,8 +14,12 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
 //Handle GETs
+//Basically use the same code between GET / POST to parse in a request, 
+//but use different handlebar files (i.e. res.render) to differentiate
 app.get('/',function(req,res){
 	//Handle all query results
+    //This is a really simple way to parse in GET request params
+    //Cited directly from the lecture notes, if this format is unwelcome then I can change
 	var qParams = [];
 	for (var p in req.query){
 		qParams.push({'name':p,'value':req.query[p]})
@@ -28,7 +32,9 @@ app.get('/',function(req,res){
 //Handle POSTs
 app.post('/', function(req,res){
 	//Buffer datum into qParams var for processing
-	var qParams = [];
+	//This is a really simple way to parse in POST request params
+    //Cited directly from the lecture notes, if this format is unwelcome then I can change
+    var qParams = [];
 	for (var p in req.body){
 			qParams.push({'name':p, 'value':req.body[p]})
 	}
