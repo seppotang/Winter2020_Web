@@ -26,29 +26,21 @@ body {
 }
 .carousel-inner > .item > img {
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
+  top: 0px;
+  left: 340px;
+  min-width: 50%;
   height: 500px;
 }
 
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+.left_arrow {
+    position:relative;
+    top: 300px;
 }
 
+.right_arrow {
+    position:relative;
+    top: 300px;
+}
 
 /* Featurettes
 ------------------------- */
