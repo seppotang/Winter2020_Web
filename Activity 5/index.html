@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>GETter POSTer</title>
+  </head>
+  <body>
+	<script src="script.js"></script>
+	<form>
+      <fieldset>
+        <legend>Weather GETter</legend>
+        <!-- City Field -->
+		<label for="cityName"></label>
+		<input type="text" name="cityName" id="cityName" placeholder="Enter your City Name">
+		<br>
+		<p>OR</p>
+        <!-- Zip Field -->
+		<label for="zipCode"></label>
+        <input type="text" name="zipCode" id="zipCode" placeholder="Enter your Zip Code">
+		<br>
+		<p>AND</P>
+		<!-- Country Code Field-->
+		<label for="countryCode"></label>
+        <input type="text" name="countryCode" id="countryCode" placeholder="Enter your Country Code">
+		<br>
+		
+		<!-- Submit Field -->
+		<input type="submit" id="weatherSubmit" onclick="return getFieldVerify()">
+		<br>
+		
+		<!-- Error Notice -->
+		<p id="weatherErrorField"></p>
+      </fieldset>
+    </form>
+	
+	<div>
+      <h2>Result</h2>
+	  <p id="weatherResultField"></p>
+    </div>
+	
+	<form>
+      <fieldset>
+        <legend>HTTPBin POSTer</legend>
+        <label for="postField"></label>
+        <input type="text" name="postField" id="postField">
+        <input type="submit" id="postSubmit" onclick="return postFieldVerify()">
+		<p id="postErrorField"></p>
+      </fieldset>
+    </form>
+	
+	<div>
+      <h2>Result</h2>
+	  <p id="postResponse"></p>
+    </div>
+  </body>
+</html>
