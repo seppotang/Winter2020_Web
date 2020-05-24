@@ -6,7 +6,7 @@ var app = express();
 var handlebars = require('express-handlebars');
 app.engine('handlebars', handlebars({defaultLayout: 'main', extname: '.handlebars'}));
 app.set('view engine', 'handlebars');
-app.set('port', 9001);
+app.set('port', 9005);
 
 //Initialize bodyParser for POST request
 var bodyParser = require('body-parser');
